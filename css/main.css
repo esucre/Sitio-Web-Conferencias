@@ -118,6 +118,9 @@ textarea {
     width: 98%;
     max-width: 120rem;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: 480px) {
@@ -236,7 +239,7 @@ textarea {
     padding: 2rem 0;
   }
   .logo{
-    width: 80%;
+    width: 96%;
   }
   .logo img{
     width: 100%;
@@ -249,8 +252,15 @@ textarea {
   }
 
   /*Navegacion Principal*/
+.navegacion{
+  margin-left: 4rem;
+}
+
   .navegacion-principal{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;    
   }
 
   .navegacion-principal a{
@@ -260,6 +270,8 @@ textarea {
     text-transform: uppercase;
     font-size: 1.8rem;
     transition: all .5s ease;
+    width: 100%;
+    text-align: center;
   }
 
   .navegacion-principal a:hover{
@@ -279,20 +291,53 @@ textarea {
     .navegacion{
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      
+      align-items: center;      
     }
     .navegacion-principal{
       font-size: 1.5rem;
-      
+      margin-left: 15rem;
       display: block;
     }
 
     .navegacion-principal a{
       margin-right: 10px;
+      
+    }
+
+    .navegacion-principal a:last-child{
+      margin-right: 0;
     }
     
   }
+
+  /*Menu Movil*/
+  .menu-movil{
+    width: 6rem;
+    display: block;
+    text-align: right;
+    margin-top: 1.2rem;
+    margin-right: 3rem;
+    margin-bottom: .7rem;
+    line-height: 2.5rem;
+  }
+
+  .menu-movil:hover{
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    .menu-movil{
+      display: none;
+    }
+  }
+
+  .menu-movil span{
+    height: .8rem;
+    margin-bottom: .6rem;
+    background-color: white;
+    display: block;
+  }
+
 
 
 

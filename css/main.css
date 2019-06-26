@@ -98,9 +98,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
   /*Globales*/
-   html {
+  html{
     box-sizing: border-box;
-  }
+    font-size: 62.5%; 
+}
   *, *:before, *:after {
     box-sizing: inherit;
   }
@@ -113,6 +114,34 @@ textarea {
     font-family: 'Oswald', sans-serif;
   }
 
+  .contenedor{
+    width: 98%;
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 480px) {
+    .contenedor{
+      width: 95%;
+
+    }
+  }
+
+  @media (min-width: 768px) {
+    .contenedor{
+      width: 90%;
+
+    }
+  }
+
+  @media (min-width: 992px) {
+    .contenedor{
+      width: 90%;
+      max-width: 110rem;
+
+    }
+  }
+
   /*Header*/
 
   .hero{
@@ -123,24 +152,24 @@ textarea {
   }
 
   .contenido-header{
-    padding-top: 40px;
+    padding-top: 4rem;
   }
   @media (min-width: 768px) {
     .contenido-header{
-      padding-top: 10px;
+      padding-top: 1rem;
      
     }
   }
 
   .redes-sociales{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
   }
 
   .redes-sociales a{
     color: white;
     font-size: 2em;
-    margin-right: 20px;
+    margin-right: 2rem;
   }
 
   .redes-sociales a:last-child{
@@ -162,7 +191,7 @@ textarea {
   .informacion-evento p{
     margin: 0;
     display: inline;
-    font-size: 20px;
+    font-size: 2rem;
     text-transform: uppercase;
   }
   .informacion-evento p i{
@@ -198,6 +227,71 @@ textarea {
 
   .slogan span{
     font-weight: bold;
+  }
+
+  /*Barra*/
+
+  .barra{
+    background-color: #353535;
+    padding: 2rem 0;
+  }
+  .logo{
+    width: 80%;
+  }
+  .logo img{
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .logo{
+      width: 40%;
+    }
+  }
+
+  /*Navegacion Principal*/
+  .navegacion-principal{
+    display: none;
+  }
+
+  .navegacion-principal a{
+    font-family:'Oswald', sans-serif;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    transition: all .5s ease;
+  }
+
+  .navegacion-principal a:hover{
+    background-color: #f34918;
+  }
+
+  .navegacion-principal a:last-child{
+    border: 2px solid  #f34918;
+    color:  #f34918;
+  }
+
+  .navegacion-principal a:last-child:hover{
+    color: white;
+  }
+
+  @media (min-width: 768px) {
+    .navegacion{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+    .navegacion-principal{
+      font-size: 1.5rem;
+      
+      display: block;
+    }
+
+    .navegacion-principal a{
+      margin-right: 10px;
+    }
+    
   }
 
 

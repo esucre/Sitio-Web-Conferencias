@@ -110,18 +110,67 @@ textarea {
     background-color: #f2f2f2;
     font-family: 'Open Sans', sans-serif;
   }
+
+  .seccion{
+    padding: 3rem 0;
+  }
+
+  .seccion p{
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
   h2{
     font-family: 'Oswald', sans-serif;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  h2::after{
+    content: '';
+    margin: 0 auto;
+    background-image: url(../img/separador.png);
+    height: 3rem;
+    width: 10rem;
+    display: block;
+  }
+
+  h3{
+    font-size: 2rem;
+    color: #fe4918;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+  }
+
+  .buttom{
+    background-color: #fe4918;
+    padding: 1rem 4rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    display: inline-block;
+    transition: all .3s ease;
+  }
+
+  .buttom:hover{
+    background-color: #e33000;
+  }
+
+  .alinear-derecha{
+    float: right;
   }
 
   .contenedor{
     width: 98%;
     max-width: 120rem;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
+
 
   @media (min-width: 480px) {
     .contenedor{
@@ -140,8 +189,7 @@ textarea {
   @media (min-width: 992px) {
     .contenedor{
       width: 90%;
-      max-width: 110rem;
-
+      max-width: 120rem;
     }
   }
 
@@ -238,6 +286,12 @@ textarea {
     background-color: #353535;
     padding: 2rem 0;
   }
+
+  .contenedor.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .logo{
     width: 96%;
   }
@@ -252,9 +306,9 @@ textarea {
   }
 
   /*Navegacion Principal*/
-.navegacion{
+/*.navegacion{
   margin-left: 4rem;
-}
+}*/
 
   .navegacion-principal{
     display: flex;
@@ -295,7 +349,7 @@ textarea {
     }
     .navegacion-principal{
       font-size: 1.5rem;
-      margin-left: 15rem;
+      margin-left: 30rem;
       display: block;
     }
 
@@ -338,6 +392,94 @@ textarea {
     display: block;
   }
 
+  /*Talleres*/
+
+  .programa{
+    position: relative;
+  }
+
+  .contenedor-video{
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .contenido-programa{
+    position: absolute;
+    top:1rem;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .programa-evento{
+    background-color: rgba(255, 255, 255, .6);
+    padding: 7.2rem;
+    margin-top: 8rem;
+  }
+
+  @media (min-width: 768px) {
+    .programa-evento{
+      width: 70%;
+    }    
+  }
+
+  @media (min-width: 992px) {
+    .programa-evento{
+      width: 50%;
+    }    
+  }
+
+  .menu-programa{
+    width: 100%;
+    border-bottom: 1px solid #fe4918;
+    padding-bottom: 1rem;
+  }
+
+  .menu-programa a{
+    display: block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+  }
+
+  @media (min-width: 768px) {
+    .menu-programa{
+      display: table;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .menu-programa a{
+      display: table-cell;
+    }
+  }
+
+  .menu-programa a i,
+  .detalle-evento i{
+    color: #fe4918;
+    font-size: 1.8rem;
+    margin-right: .9rem;
+  }
+
+  /*Detalle Evento*/
+  .detalle-evento{
+    margin-top: 2rem;
+    border-bottom: 1px solid black;
+    padding: 0 2rem;
+  }
+
+  .detalle-evento:nth-child(2){
+    border: none;
+  }
+
+  .detalle-evento p{
+    margin-bottom: 1.8rem;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 
 
 

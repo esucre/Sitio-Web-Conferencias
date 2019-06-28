@@ -155,6 +155,14 @@ textarea {
     margin-top: 2rem;
     display: inline-block;
     transition: all .3s ease;
+    border: 2px solid;
+  }
+
+  .buttom.hollow,
+  .buttom.hollow:hover{
+    background-color: white;
+    color: #f34918;
+    
   }
 
   .buttom:hover{
@@ -549,6 +557,128 @@ textarea {
     bottom: -8rem;
     opacity: 0;
   }
+
+  /*Contador*/
+
+  .parallax::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-filter: brightness(.8);
+    filter: brightness(.8);
+  }
+
+  .contador{
+    position: relative;
+    height: auto;
+  }
+
+  .contador::before{
+    background-image: url(../img/bg-resumen.jpg);
+    content: '';
+  }
+
+  .resumen-evento{
+    position: relative;
+    padding: 12rem 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .resumen-evento li{
+    width: 50%;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.4rem;
+  }
+
+  @media (min-width: 768px) {
+    .resumen-evento li{
+      width: 25%;
+    }
+  }
+
+  p.numero{
+    color: #fe4918;
+    font-size: 5rem;
+    display: block;
+    margin: 0 0 1rem 0;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  /*Tabla de Precios*/
+
+  .lista-precios>li{
+    padding: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .lista-precios{
+      display: flex;
+    }
+
+    .lista-precios>li{
+      justify-content: space-between;
+      width: 33.3%;
+    }
+  }
+
+  .tabla-precio{
+    border: 1px solid #e1e1e1;
+    background-color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .tabla-precio:hover{
+    transform: scale(1.1);
+    border: 1px solid #fe4918;
+    box-shadow: 0px 0px 5rem #666; 
+    transition: all .3s ease;
+  }
+
+  .tabla-precio ul li{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: #868686;
+    line-height: 2.6rem;
+  }
+
+  .tabla-precio ul li::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+    font-size: 2rem;
+    color: green;
+    -webkit-font-smoothing: antialiased;
+    content: '\f00c';
+  }
+
+  .tabla-precio h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+  }
+
+  .tabla-precio p.numero{
+    color: black;
+    margin: 2rem 0;
+  }
+
+
 
 
 

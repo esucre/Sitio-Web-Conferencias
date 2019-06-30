@@ -808,6 +808,87 @@ blockquote p::before{
   font-family: 'PT Sans',sans-serif;
 }
 
+/*Cuenta Regresiva*/
+.cuenta-regresiva ul li{
+text-transform: uppercase;
+font-family: 'Oswald',sans-serif;
+font-size: 1.6rem;
+text-align: center;
+}
+
+@media (min-width: 768px) {
+  .cuenta-regresiva ul li{
+    width: 25%;
+    float: left;
+  }
+}
+
+/*----------Footer----------*/
+footer{
+  background-color: #353535;
+  padding-top: 4rem;
+  margin-top: 2rem;
+}
+
+footer .contenedor > div{
+  color: white;
+  padding: 0px 20px;
+  font-size: 1.2rem;
+  
+}
+
+@media (min-width: 768px) {
+  footer .contenedor{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .contenedor > div{
+    width: 33.3%;
+  }
+
+}
+
+
+@media (min-width: 768px) {
+  footer .contenedor > div p{
+    padding: 0 2rem 0 0;
+    text-align: justify;
+  }
+
+  footer .menu{
+    padding-left: 3rem;
+  }
+}
+
+footer h3{
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Oswald',sans-serif;
+  margin-bottom: 2rem;
+}
+
+footer h3 span{
+  color: #f34918;
+}
+
+footer .ultimos-tweets li{
+  margin-bottom: 1rem;
+}
+footer nav.redes-sociales{
+  text-align: left;
+}
+
+.copyright{
+  background-color: #2e2e2e;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+  
+}
+
+
 
 
 

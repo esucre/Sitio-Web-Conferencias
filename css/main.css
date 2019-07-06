@@ -143,6 +143,14 @@ textarea {
     margin: 0;
   }
 
+  h4{
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fe4918;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+  }
+
   .buttom{
     background-color: #fe4918;
     padding: 1rem 4rem;
@@ -747,6 +755,7 @@ blockquote p::before{
 
 .info-testimonial{
   padding:0;
+  background-color: transparent;
 }
 
 .info-testimonial img{
@@ -887,6 +896,138 @@ footer nav.redes-sociales{
   font-size: 1.4rem;
   
 }
+
+/*----------INTERNAS----------*/
+/*--Registro--*/
+.registro{
+  font-size: 1.5rem;
+}
+
+.registro h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2rem 0 0 0;
+}
+
+.registro label{
+  margin-bottom: .5rem;
+  font-weight: bold;
+}
+
+.caja{
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.campo{
+  padding: 2rem ;
+}
+
+@media (min-width: 768px) {
+  .registro.caja{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .registro.caja.campo{
+    width: 33.3%;
+  }
+}
+
+
+
+.paquetes .tabla-precio:hover{
+  transform: none;
+  box-shadow: none;
+}
+
+.paquetes .tabla-precio input{
+  clear: both;
+  width: 10rem;
+  margin: 1rem auto 0 auto;
+  display: block;
+}
+
+.contenido-dia{
+  padding: 2rem;
+  /*display: none;*/
+  
+}
+
+@media (min-width: 768px) {
+  .contenido-dia > div{
+    float: left;
+    width: 33.3%;
+    padding: 2rem;
+  }
+}
+
+
+.contenido-dia > div p{
+  text-align: left;
+
+}
+
+.contenido-dia > div label{
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.contenido-dia > div input{
+  margin-right: 1rem;
+  padding: 4rem;
+}
+
+.contenido-dia > div label time{
+  color: #fe4918;
+  font-weight: bold;
+}
+
+/*--Resumen Registro--*/
+.resumen p{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.resumen .caja{
+  display: flex;
+}
+
+.resumen .extras{
+  padding:3rem;
+}
+
+.resumen .total{
+  padding:3rem;
+  width: 50%;
+}
+
+
+.extras .orden{
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.extras .orden input{
+  margin: 1rem 0 0 0;
+}
+
+.resumen input{
+  display: block;
+  margin: 1rem auto;
+}
+
+.buttom.calcular{
+  margin: 0;
+}
+
+
+
+
+
+
 
 
 

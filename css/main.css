@@ -991,8 +991,10 @@ footer nav.redes-sociales{
   text-transform: uppercase;
 }
 
-.resumen .caja{
-  display: flex;
+@media (min-width: 768px) {
+  .resumen .caja{
+    display: flex;
+  }
 }
 
 .resumen .extras{

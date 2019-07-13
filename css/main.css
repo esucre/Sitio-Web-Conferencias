@@ -699,7 +699,6 @@ textarea {
 
 .mapa{
   height: 40rem;
-  background-color: #999;
 }
 
 /*Testimoniales*/
@@ -925,6 +924,13 @@ footer nav.redes-sociales{
   padding: 2rem ;
 }
 
+#error{
+  margin: 1rem;
+  padding: 1rem;
+  font-weight: bold;
+  color: red;
+}
+
 @media (min-width: 768px) {
   .registro.caja{
     display: flex;
@@ -952,7 +958,7 @@ footer nav.redes-sociales{
 
 .contenido-dia{
   padding: 2rem;
-  /*display: none;*/
+  display: none;
   
 }
 
@@ -1006,6 +1012,12 @@ footer nav.redes-sociales{
   width: 50%;
 }
 
+@media (min-width: 768px) {
+  .resumen .total{
+    margin-left: 14rem;
+  }
+}
+
 
 .extras .orden{
   text-align: left;
@@ -1019,6 +1031,19 @@ footer nav.redes-sociales{
 .resumen input{
   display: block;
   margin: 1rem auto;
+}
+
+#lista-productos{
+  background-color: #e1e1e1;
+  padding: 1.5rem;
+  display: none;
+  
+}
+
+#suma-total{
+  font-size: 2.5rem;
+  text-align: center;
+  color: #fe4918;
 }
 
 .buttom.calcular{

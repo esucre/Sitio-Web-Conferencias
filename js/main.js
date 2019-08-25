@@ -172,15 +172,18 @@ var scroll = $(window).scrollTop();
 
 if(scroll > windowHeight){
 $('.barra').addClass('fixed');
-$('.barra').css({'padding': '1rem 0'});
-$('body').css({'margin-top': barraAltura +'px'});
+
 
 }
 else{
     $('.barra').removeClass('fixed');
-    $('body').css({'margin-top': '0px'});
-    $('.barra').css({'padding': '2rem 0'});
 }
+});
+
+//Menu Responsive
+
+$('.menu-movil').on('click', function(){
+$('.navegacion-principal').slideToggle();
 });
 
 //Programa de Conferencias

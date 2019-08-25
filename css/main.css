@@ -385,14 +385,17 @@ textarea {
 
   @media (min-width: 768px) {
     .logo{
-      width: 30%;
+      width: 70%;
     }
   }
 
   /*Navegacion Principal*/
-/*.navegacion{
-  margin-left: 4rem;
-}*/
+
+  .navegacion-movil{
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+  }
 
   .navegacion-principal{
     display: none;
@@ -412,10 +415,6 @@ textarea {
     margin-bottom: 1rem;
   }
 
-  /*.navegacion-principal a:first-child{
-    margin-top: 9rem;
-  }*/
-
   .navegacion-principal a:hover{
     background-color: #f34918;
   }
@@ -430,20 +429,24 @@ textarea {
   }
 
   @media (min-width: 768px) {
+    .navegacion-desktop{
+      display: flex;
+      align-items: center;
+    }
     .navegacion-principal{
       width: 67%;
-      float: right;
+      
       text-align: right;
       font-size: 1.5rem;
       display: block;
     }
 
     .navegacion-principal a{
-      padding: 1rem 1rem;
+      
       display: inline-block;
       width: auto;
       text-align: center;
-      margin: 1rem 1rem 0 0!important;
+      margin: 0 1rem!important;
       
     }
    
@@ -456,13 +459,12 @@ textarea {
 
   /*Menu Movil*/
   .menu-movil{
-    width: 10%;
+    width: 6rem;
     display: block;
-    float: right;
     text-align: right;
     margin-top: 2rem;
-    /*margin-right: 3rem;
-    margin-bottom: .7rem;*/
+    margin-right: 2rem;
+    margin-bottom: 1rem;
     line-height: 2.5rem;
     
   }
